@@ -1,0 +1,17 @@
+.DS_Store
+~$*
+*.zip
+
+
+*.aux
+*.log
+*.blg
+*.synctex*
+
+
+__pycache__
+*.pyc
+
+*checkpoints
+
+*.pptx

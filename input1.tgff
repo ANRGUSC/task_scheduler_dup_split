@@ -1,0 +1,50 @@
+@TASK_GRAPH 0 {
+	APERIODIC
+
+	ARC a0_0 	FROM A TO B 	TYPE 100
+	ARC a0_0 	FROM B T1 C 	TYPE 100
+	ARC a0_0 	FROM B TO D 	TYPE 100
+	ARC a0_1 	FROM C TO E 	TYPE 100
+	ARC a0_2 	FROM D TO E 	TYPE 100
+
+}
+@computation_cost 0 {
+# type version 0 1 2 3 4 5
+  A    0 1 1 1 1 1 1
+  B    0 1 1 1 1 1 1
+  C    0 1 1 1 1 1 1
+  D    0 1 1 1 1 1 1
+  E    0 1 1 1 1 1 1
+
+}
+
+
+
+
+@quadratic 0 {
+# Source Destination a b c
+  node0	node1	0 0.5 0
+  node1	node2	0 0.5 0
+  node2	node3	0 0.5 0
+  node3	node4	0 0.5 0
+  node4	node5	0 0.5 0
+  node5	node0	0 0.5 0
+  node1	node0	0 0.5 0
+  node2	node1	0 0.5 0
+  node3	node2	0 0.5 0
+  node4	node3	0 0.5 0
+  node5	node4	0 0.5 0
+  node0	node5	0 0.5 0
+  node0	node2	0 0.866 0
+  node1	node3	0 0.866 0
+  node2	node4	0 0.866 0
+  node3	node5	0 0.866 0
+  node4	node0	0 0.866 0
+  node5	node1	0 0.866 0
+  node2	node0	0 0.866 0
+  node3	node1	0 0.866 0
+  node4	node2	0 0.866 0
+  node5	node3	0 0.866 0
+  node0	node4	0 0.866 0
+  node1	node5	0 0.866 0
+}

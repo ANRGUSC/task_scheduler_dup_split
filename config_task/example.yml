@@ -1,0 +1,9 @@
+depth:  6
+width_min:  2
+width_max:  4
+ccr:  20
+comp_mu:    2     #computation workload
+comp_sigma: 0.5
+link_comm_sigma:  0.5   #link_comm is in normal distribution. It is the data transmitted on links.
+deg_mu: 2
+deg_sigma: 0.5

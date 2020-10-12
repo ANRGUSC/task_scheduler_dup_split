@@ -1,0 +1,28 @@
+env:
+    N0: -110
+    eta: 5
+    psi: 10
+cluster:
+    field_x:  100           # width of the field
+    field_y: 150           # height of the field
+    num_cluster: 80         # number of clusters to be placed in the field
+    min_distance: 3       # min distance between adjacent clusters
+    num_obstacle: 10         # number of obstacles to be placed in the field
+    r_obs_mu: 10           # mean radius of each obstacle (assume an obstacle is a circle where clusters cannot be placed)
+    r_obs_sigma: 10         # variance of radius of the obstacles
+    min_snr_db: 10       # all clusters falling within the radius <r_clu_neigh> circle centered at the current cluster, are neighbors of the current cluster
+    #---------------for r_var only-------------------------------------------------
+    min_deg: 7              # [Sept 5]: 4, 7, 10 the mimimum connection degree of a cluster
+    rate_mu: 100            # the mean of inter-cluster data rate
+    rate_sigma: 10          # [Sept 5]: 10,30,50 the standard dev of inter-clsuter data rate
+    r_neigh_max: 15         #the max distance btw two neighboring clusters
+    #--------------------------------------------------------------------------------
+processor:
+    clu_size: 3             # [Sept 5]: 1,3,5 each cluster contains <clu_size> number of processors
+    r_cluster: 1            # radius of a cluster. all processors within a cluster should fall in the circle of radius <r_cluster>
+    comp_mu: 10             # mean value of computation capacity of a processor
+    comp_sigma: 1           # variance of computation capacity of a processor
+    #-------------for r_var only-----------------------------------------------------
+    rate_in_mu: 500          # the mean of intra-cluster data rate
+    rate_in_sigma: 10          #the std of intra-clsuter data rate
+    #---------------------------------------------------------------------------------
