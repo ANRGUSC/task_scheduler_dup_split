@@ -1,5 +1,7 @@
 ## Scheduling Algorithm by Task Splitting
 
+Code release for the IEEE/MobileCloud '19 paper: Throughput Optimized Scheduler for Dispersed Computing Systems
+
 Contact: Diyi Hu (`diyihu@usc.edu`)
 
 
